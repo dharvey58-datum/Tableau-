@@ -1,0 +1,4 @@
+if ISOWEEKDAY([claim_date])=3 then str(DATETRUNC('week',[claim_date],'wednesday')-7)
+ELSEIF ISOWEEKDAY([claim_date])=4 then str(DATETRUNC('week',[claim_date],'wednesday')-7)
+ELSE str(DATETRUNC('week',[claim_date],'wednesday'))
+END
